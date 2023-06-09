@@ -33,33 +33,22 @@ export default class Product extends React.Component {
               {this.state.product.map((product) => (
                 <div class="col">
                   <div className="containers">
-                  <div class="card">
-                    <div class="content-1">
-                        <img src={`http://localhost:8000/source/image/product/${product.image}`}></img>
-                       
+                  <div class="product-card">
+                      <div class="badge">Neu</div>
+                      <div class="product-tumb">
+                        <img src={`http://localhost:8000/source/image/product_one/${product.image}`}></img>
+                      </div>
+                      <div class="product-details">
+                        <h4>{product.name}</h4>
+                        <p>{product.description}</p>
+                        <div class="product-bottom-details">
+                          <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="content-2">
-                        <div class="branding">
-                            <span>{product.name}</span>
-                        </div>
-                        <div class="ratings">
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                            <span><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="color">
-                            <h3>Color</h3>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="price">
-                            <h3>USD 12,995</h3>
-                        </div>
-                    </div>
-                </div>
                   </div>
                 
             </div>

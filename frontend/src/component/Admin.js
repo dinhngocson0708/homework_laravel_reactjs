@@ -91,7 +91,7 @@ class Admin extends React.Component {
       cell: (row) => (
         <img
           data-tag="allowRowEvents"
-          src={`http://localhost:8000/source/image/product/${row.image}`}
+          src={`http://localhost:8000/source/image/product_one/${row.image}`}
           alt="preview"
           style={{ width: "100px" }}
         />
